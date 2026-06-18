@@ -7,7 +7,7 @@
 const myName = `Michaela`;
 const setting = `space station`;
 
-alert(`Welcome. My name is ${myName}. I will help you create a story that takes place on ${setting}.`);
+alert(`Welcome. My name is ${myName}. I will help you create a story that takes place on a ${setting}.`);
 const charName = prompt(`First, tell me your character's name.`) || `Wanderer`;
 
 const petName = prompt(`What is the name of the pet or companion with ${charName}?`);
