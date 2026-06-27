@@ -34,7 +34,7 @@ let score = 0;
 
 let ageAnswerString = prompt(`Question 1
 What is my age in number of years?`);
-
+console.log(`Question 1 answer: ${ageAnswerString}`);
 if (ageAnswerString && ageAnswerString.trim() !== "") {
     let ageAnswer = Number(ageAnswerString);
 
@@ -54,7 +54,8 @@ if (ageAnswerString && ageAnswerString.trim() !== "") {
 
 let countryAnswer = prompt(`Current score: ${score} 
 Question 2
-Which country did I first visit outside of the US?`)
+Which country did I first visit outside of the US?`);
+console.log(`Question 2 answer: ${countryAnswer}`);
 
 if (countryAnswer && countryAnswer.trim() !== "") {
     let countryAnswerLowercase = countryAnswer.toLowerCase();
@@ -71,7 +72,9 @@ if (countryAnswer && countryAnswer.trim() !== "") {
 
 let currentGameAnswer = prompt(`Current score: ${score} 
 Question 3
-What game am I playing currently?`)
+What game am I playing currently?`);
+
+console.log(`Question 3 answer: ${currentGameAnswer}`);
 
 if (currentGameAnswer && currentGameAnswer.trim() !== "") {
     let currentGameAnswerLowercase = currentGameAnswer.toLowerCase();
@@ -88,7 +91,9 @@ if (currentGameAnswer && currentGameAnswer.trim() !== "") {
 
 let coffeeAnswer = prompt(`Current score: ${score} 
 Question 4
-What is my favorite coffee drink?`)
+What is my favorite coffee drink?`);
+
+console.log(`Question 4 answer: ${coffeeAnswer}`);
 
 if (coffeeAnswer && coffeeAnswer.trim() !== "") {
     let coffeeAnswerLowercase = coffeeAnswer.toLowerCase();
@@ -105,6 +110,7 @@ if (coffeeAnswer && coffeeAnswer.trim() !== "") {
 
 alert(`How well did you do? Let's check your answers...`);
 let finalScore = ((score / 4) * 100);
+console.log(`Received a score of ${finalScore}%.`);
 
 if (finalScore === 100) {
         alert(`===Quiz Results===
@@ -122,7 +128,7 @@ if (finalScore === 100) {
         Correct Answer: Latte
 
         Final Score: ${finalScore}%
-        Nice job, you got a 100%!
+        Nice job, you got a perfect score!
         `);
 } else if (finalScore === 75) {
         alert(`===Quiz Results===
