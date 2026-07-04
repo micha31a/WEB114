@@ -22,7 +22,7 @@ console.log(trainingYears, typeof trainingYears);
 
 const powerLevel = trainingYears * 10;
 
-const likesFighting = prompt(`Does ${charName} like fighting monsters? Click OK for Yes. Click Cancel for No.`);
+const likesFighting = confirm(`Does ${charName} like fighting monsters? Click OK for Yes. Click Cancel for No.`);
 
 console.log(likesFighting, typeof likesFighting);
 
