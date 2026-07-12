@@ -6,7 +6,7 @@ let entryCount = 0;
 let gasTotal = 0;
 let gasAverage;
 
-//Use function to calculate the user's gas totals, nmumber of entries, and the average
+//Use function to calculate the user's gas totals, number of entries, and the average
 function calcGasAvg() {
     let gasEntry = prompt("Enter your first week's gas total. Enter -1 when you are done.");
     if (gasEntry === null) {
@@ -56,7 +56,7 @@ if (username === null) {
         if (entryCount === 0) {
             alert("No entries entered. Unable to calculate gas average.")
         } else if (entryCount === 1) {
-            alert(`${username}'s gas total is ${gasTotal.toFixed(2)}.`);
+            alert(`${username}'s gas total is $${gasTotal.toFixed(2)}.`);
         } else {
             alert(`${username}'s average weekly gas bill is $${gasAverage.toFixed(2)}.`);
         }
