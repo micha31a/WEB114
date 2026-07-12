@@ -63,9 +63,9 @@ if (username === null) {
         if (entryCount === 0) {
             alert("No entries entered.")
         } else if (entryCount === 1) {
-            alert(`${username} entered $${entryCount} gas total.`);
+            alert(`${username} entered ${entryCount} gas total.`);
         } else {
-            alert(`${username} entered $${entryCount} gas totals.`);
+            alert(`${username} entered ${entryCount} gas totals.`);
         }
     }
 }
