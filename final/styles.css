@@ -1,0 +1,229 @@
+/* Michaela Harding 7/21/2026 */
+
+/*
+    Color palette:
+    Off white: #f1f0e9;
+    Beige: #E7DECF
+    Tan: #B8B2AA
+    Sage green: #A7B2AA
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Prata, "Times New Roman", serif;
+    margin: 0;
+    background-color: #E7DECF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Prata, "Times New Roman", serif;
+}
+
+p,
+button {
+    font-family: Karla, Arial, san-serif;
+}
+
+button {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid #B8B2AA;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dddad5;
+}
+
+header {
+    background-color: #A7B2AA;
+    padding: 10px;
+    margin: 0 0 40px 0;
+}
+
+img {
+    display: block;
+    max-width: 75%;
+    height: auto;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #A7B2AA;
+}
+
+footer {
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.example {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #A7B2AA;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px 40px;
+    max-width: 90%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.example-font {
+    max-width: 100%;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.color-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 5px;
+    margin: auto;
+    place-content: center;
+}
+
+
+.font-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 5px;
+    margin: auto;
+    place-content: center;
+}
+
+.style-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 5px;
+    margin: auto;
+    place-content: center;
+}
+
+.image-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 5px;
+    margin: auto;
+    place-content: center;
+}
+
+.image-answer {
+    max-height: 150px;
+}
+
+.question {
+    display: none;
+    margin: 20px 20px;
+}
+
+.question.current {
+    display: block;
+    margin: 20px 20px;
+}
+
+.results {
+    text-align: center;
+    margin: 10px auto;
+    width: 75%;
+    background-color: #f1f0e9;
+    border: 1px solid #A7B2AA;
+    border-radius: 10px;
+}
+
+.preview-caption {
+    padding: 20px 10px;
+    margin: 0px auto;
+    background-color: #d2cec9;
+}
+
+.image-credits {
+    display: none;
+}
+
+#theme-quiz {
+    background-color: #f1f0e9;
+    border: 1px solid #B8B2AA;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 75%;
+    display: block;
+}
+
+#results {
+    display: none;
+}
+
+#business-btn {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#traditional-btn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#handwritten-btn {
+    font-family: "Shadows Into Light", "Times New Roman", serif;
+}
+
+#elegant-btn {
+    font-family: "Sorts Mill Goudy", "Times New Roman", serif;
+}
+
+#striking-btn {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#robotic-btn {
+    font-family: 'Courier New', Courier, monospace
+}
+
+#round-btn,
+.round-btn {
+    border: 2px solid #A7B2AA;
+    border-radius: 50px;
+}
+
+#angular-btn,
+.angular-btn {
+    border: 5px double #000;
+    border-radius: 0;
+}
+
+#organic-btn,
+.organic-btn {
+    border: 3px dotted #414843;
+    border-radius: 50px 20px 1px 35px;
+}
+
+#minimal-btn,
+.minimal-btn {
+    border: 1px solid #c3c2c0;
+    border-radius: 0;
+}
+
+#back-btn {
+    display: none;
+}
+
+#example-image {
+    margin: 10px;
+    max-width: 200px;
+    height: auto;
+}
+
+#example-button {
+    margin: 0;
+}
+
+/* As mentioned on the HTML file, I modified the font and style questions using CSS properties in order to display and store the user's selected values. The font was easy to store and transform using Javascript because it was only a single font family value I needed to grab and then add back into the example button. The button styles on the other hand required a bit more intentionality because I needed to translate an entire set of properties into the final preview, which I accomplished by using the same class that I could then add to the final product using Javascript. I also needed to ensure that most questions or the results section remained hidden until the user interacted with it accordingly, when I could reveal it using Javascript.*/

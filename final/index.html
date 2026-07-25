@@ -1,0 +1,225 @@
+<!-- Michaela Harding 7/21/2026-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="final.js" defer></script>
+
+    <!--I wanted some fun fonts so I copied Google's embed code from fonts.google.com!-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Prata&family=Shadows+Into+Light&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <title>Website Theme Builder</title>
+</head>
+
+<body>
+    <!--header section-->
+    <header id="theme-header">
+        <h1>
+            Website Theme Builder
+        </h1>
+        <h2>
+            Let's mix and match for your website!
+        </h2>
+        <p>
+            Wondering if the vision in your head will translate beautifully to reality? Pick your colors, fonts, styles,
+            and
+            images to see it transform in real time!
+        </p>
+    </header>
+    <!--quiz/main section-->
+    <main>
+        <section id="theme-quiz">
+            <div class="question current" id="question1">
+                <h3>Let's get started!</h3>
+                <h4>
+                    First, what is your preferred color scheme?
+                </h4>
+                <div class="answers color-options">
+                    <button id="blue-btn">
+                        <img src="img/bluepalette.jpeg" alt="Blue palette">
+                        Blues and grays
+                    </button>
+                    <button id="red-btn">
+                        <img src="img/redpalette.jpeg" alt="Red palette">
+                        Reds and browns
+                    </button>
+                    <button id="yellow-btn">
+                        <img src="img/yellowpalette.jpeg" alt="Yellow palette">
+                        Yellows and greens
+                    </button>
+                    <button id="purple-btn">
+                        <img src="img/purplepalette.jpeg" alt="Purple palette">
+                        Purples and pinks
+                    </button>
+                    <button id="monochrome-btn">
+                        <img src="img/monochrome.jpeg" alt="Monochrome palette">
+                        Blacks and whites
+                    </button>
+                </div>
+            </div>
+            <div class="question" id="question2">
+                <h4>
+                    Which font do you like best?
+                </h4>
+                <div class="answers font-options">
+                    <button id="business-btn">
+                        Business
+                    </button>
+                    <button id="traditional-btn">
+                        Traditional
+                    </button>
+                    <button id="handwritten-btn">
+                        Handwritten
+                    </button>
+                    <button id="elegant-btn">
+                        Elegant
+                    </button>
+                    <button id="striking-btn">
+                        Striking
+                    </button>
+                    <button id="robotic-btn">
+                        Robotic
+                    </button>
+                </div>
+            </div>
+
+            <div class="question" id="question3">
+                <h4>
+                    What's your preferred style?
+                </h4>
+                <div class="answers style-options">
+                    <button class="round-btn" id="round-btn">
+                        Round
+                    </button>
+                    <button class="angular-btn" id="angular-btn">
+                        Angular
+                    </button>
+                    <button class="organic-btn" id="organic-btn">
+                        Organic
+                    </button>
+                    <button class="minimal-btn" id="minimal-btn">
+                        Minimal
+                    </button>
+                </div>
+            </div>
+
+            <div class="question" id="question4">
+                <h4>
+                    What kind of images do you like?
+                </h4>
+                <div class="answers image-options">
+                    <button id="noir-btn">
+                        <img src="img/noir.jpg" class="image-answer" alt="Photo of alighthouse in black and white">
+                        Noir & monochrome
+                    </button>
+                    <button id="vibrant-btn">
+                        <img src="img/vibrant.jpg" class="image-answer" alt="A colorful front door">
+                        Vibrant & saturated
+                    </button>
+                    <button id="pastel-btn">
+                        <img src="img/pastel.jpg" class="image-answer" alt="Pastel stones">
+                        Muted & pastel
+
+                    </button>
+                    <button id="contrast-btn">
+                        <img src="img/contrast.jpg" class="image-answer" alt="A woman covering her face">
+                        Contrasting & dramatic
+                    </button>
+                    <button id="vintage-btn">
+                        <img src="img/vintage.jpg" class="image-answer" alt="Retro diner">
+                        Vintage & retro
+                    </button>
+                    <button id="artistic-btn">
+                        <img src="img/artistic.jpg" class="image-answer" alt="Bird art">
+                        Artistic & composite
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--pop-up that says their quiz is generating before displaying below code-->
+        <!--results and preview section-->
+        <section class="results" id="results">
+            <h3 class="preview-caption">Your theme has been built! Here's your style:</h3>
+            <div class="results">
+                <p><strong>Color palette: </strong><span id="color-text"></span></p>
+                <p><strong>Typography: </strong><span id="font-text"></span></p>
+                <p><strong>Design style: </strong><span id="style-text"></span></p>
+                <p><strong>Imagery: </strong><span id="image-text"></span></p>
+            </div>
+
+            <h4 class="preview-caption">Here's your preview of what your website theme would look like!</h4>
+
+            <div class="example" id="example">
+                <div class="text-section">
+                    <h2 class="example-font">Your Beautiful Website Theme</h2>
+                    <h3 class="example-font">Here's your preview heading!</h3>
+                    <p class="example-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie lacus
+                        vel mauris vehicula vulputate. Duis at lectus erat. Nulla mollis, elit sed sodales commodo, enim
+                        dui commodo ante, nec cursus arcu libero ac lectus. Interdum et malesuada fames ac ante ipsum
+                        primis in faucibus. Mauris ornare faucibus erat quis volutpat. </p>
+                    <button class="" id="example-button">
+                        Example Button
+                    </button>
+                </div>
+                <img src="" alt="User's chosen image" id="example-image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--display image credits at the end-->
+        <hr>
+        <section class="image-credits">
+            <h4>Image Credits:</h4>
+            <p>Color palettes created using Adobe's <a href="https://color.adobe.com/create/color-wheel">color
+                    palette
+                    generator</a></p>
+            <p>
+                Noir Photo by <a
+                    href="https://unsplash.com/@emanrib?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emanuel
+                    Ribeiro</a> on <a
+                    href="https://unsplash.com/photos/a-lighthouse-on-a-rocky-hill--Emb4ncISvk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+            <p>
+                Vibrant Photo by <a
+                    href="https://unsplash.com/@irynalimborska?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Iryna
+                    Limborska</a> on <a
+                    href="https://unsplash.com/photos/bright-orange-shutters-frame-a-blue-window-with-potted-flowers-EdwTt-NcNUI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+            <p>
+                Pastel Photo by <a
+                    href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie
+                    Spratt</a> on <a
+                    href="https://unsplash.com/photos/white-purple-and-yellow-stones--KKLWDAgj2Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+            <p>
+                Dramatic Photo by <a
+                    href="https://unsplash.com/@patrick_gillespie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick
+                    Gillespie</a> on <a
+                    href="https://unsplash.com/photos/woman-holds-face-with-both-hands-65UK3Fa_yIg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+            <p>Retro Photo by <a
+                    href="https://unsplash.com/@oneshotespresso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hans
+                    Vivek</a> on <a
+                    href="https://unsplash.com/photos/empty-table-and-chairs-sLPRSdxsMUA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+            <p>
+                Artistic Photo by <a
+                    href="https://unsplash.com/@bostonpubliclibrary?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Boston
+                    Public Library</a> on <a
+                    href="https://unsplash.com/photos/a-group-of-birds-sitting-on-top-of-a-tree-branch-hTNaQ1oAl8c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
+
+<!-- I planned the HTML into three main sections: website header, quiz, and results. The header would remain visible at all times but the rest of the content would dynamically change as part of the quiz/results. In order to display visually the colors or the image styles, I needed to add image elements to the color and image questions, but for the font and style questions, I displayed using CSS properties. -->
